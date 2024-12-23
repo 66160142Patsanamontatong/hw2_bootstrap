@@ -5,318 +5,26 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-/* Header */
-header {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-/* Main Content */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-main img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
-}
-/* Main Section */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-    width: 100%;
-    margin: 2rem auto;
-}
-
-label {
-    font-weight: bold;
-    text-align: left;
-}
-
-input, textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-button {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: #005bb5;
-}
-button:hover {
-    background-color: #005bb5;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-}
-/* Main Layout */
-main {
-    display: grid; /* ใช้ Grid Layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* สร้างคอลัมน์ที่ยืดหยุ่น */
-    gap: 1.5rem; /* ช่องว่างระหว่างแต่ละ Section */
-    padding: 2rem; /* เพิ่ม Padding รอบ ๆ main */
-    max-width: 1200px; /* จำกัดความกว้างสูงสุดของเนื้อหา */
-    margin: 0 auto; /* จัดกลางหน้าเว็บ */
-}
-
-/* Section Styling */
-section {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* ทำให้รูปภาพมีมุมโค้ง */
-    margin-top: 1rem;
-}
-/* จัดการรูปภาพ */
-main img {
-    display: block; /* จัดให้รูปอยู่ตรงกลาง */
-    margin: 1rem auto; /* เว้นระยะขอบรอบรูปภาพ */
-    max-width: 100%; /* ทำให้รูปภาพไม่เกินความกว้างของคอนเทนเนอร์ */
-    height: auto; /* ปรับสัดส่วนรูปภาพให้เหมาะสม */
-    border-radius: 8px; /* เพิ่มความโค้งมนให้รูปภาพ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูสวยงาม */
-}
-main img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* Section Styling with Border and Shadow */
-section {
-    background-color: #fff; /* พื้นหลังสีขาว */
-    border-radius: 12px; /* มุมโค้ง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
-    padding: 1.5rem; /* ระยะห่างภายในกรอบ */
-    margin: 2rem auto; /* จัดกรอบให้อยู่ตรงกลางและมีช่องว่างด้านบน-ล่าง */
-    max-width: 800px; /* จำกัดความกว้างของ Section */
-    text-align: center; /* จัดข้อความและรูปภาพให้อยู่ตรงกลาง */
-}
-
-section img {
-    max-width: 100%; /* ทำให้รูปภาพไม่เกินขนาดกรอบ */
-    height: auto;
-    border-radius: 8px; /* ทำให้มุมรูปภาพโค้ง */
-    margin-top: 1rem; /* เพิ่มระยะห่างด้านบนของรูปภาพ */
-}
-/* Reset ขอบเขตเริ่มต้น */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Body Styling */
-body {
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header */
 header {
     background-color: #0066cc;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 1rem 0;
 }
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-/* Main Container */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh; /* จัดให้เนื้อหาอยู่ตรงกลางจอ */
-    padding: 2rem;
-}
-
-form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 500px;
-    width: 100%;
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-form button {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 100%;
-    font-weight: bold;
-}
-
-form button:hover {
-    background-color: #005bb5;
-}
-
-
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-
-header {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
 
 .navbar {
     background-color: #0066cc;
 }
 
 .navbar .nav-link {
-    color: #fff;
+    color: white;
     font-weight: bold;
 }
 
@@ -325,95 +33,25 @@ header {
     text-decoration: underline;
 }
 
-
 footer {
     background-color: #222;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 1rem;
 }
 
-
 .card {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .card img {
     border-radius: 8px 8px 0 0;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-
-.places-section {
-    padding: 2rem;
-}
-
-.places-section .row {
-    gap: 2rem;
-}
-
-
-form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #0066cc;
-    color: #fff;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #005bb5;
-}
-
-
-@media (max-width: 768px) {
-    .navbar .nav-link {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        font-size: 0.85rem;
-    }
-
-    .card {
-        margin-bottom: 1rem;
-    }
-}
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff; /* สีข้อความ */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
-    padding: 1rem 2rem; /* เพิ่มพื้นที่รอบข้อความ */
-    border-radius: 8px; /* มุมโค้ง */
-    font-size: 1.5rem; /* ขนาดข้อความใหญ่ขึ้น */
-    font-weight: bold;
-}
 .hero-section {
     position: relative;
     text-align: center;
@@ -423,12 +61,30 @@ form button:hover {
 .hero-section img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* ทำให้ภาพเต็มกรอบโดยไม่เสียอัตราส่วน */
-    filter: brightness(70%); /* ลดความสว่างของภาพเพื่อให้ข้อความโดดเด่น */
+    object-fit: cover;
+    filter: brightness(50%);
 }
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .hero-text {
-        font-size: 1.2rem; /* ลดขนาดข้อความสำหรับหน้าจอขนาดเล็ก */
+        font-size: 1.2rem;
         padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
     }
 }
