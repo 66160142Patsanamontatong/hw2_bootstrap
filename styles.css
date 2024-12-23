@@ -414,3 +414,21 @@ form button:hover {
     font-size: 1.5rem; /* ขนาดข้อความใหญ่ขึ้น */
     font-weight: bold;
 }
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* ทำให้ภาพเต็มกรอบโดยไม่เสียอัตราส่วน */
+    filter: brightness(70%); /* ลดความสว่างของภาพเพื่อให้ข้อความโดดเด่น */
+}
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1.2rem; /* ลดขนาดข้อความสำหรับหน้าจอขนาดเล็ก */
+        padding: 0.8rem 1.5rem;
+    }
+}
