@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถานที่ท่องเที่ยว จังหวัดฉะเชิงเทรา</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ฉะเชิงเทรา</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="places.html">สถานที่ท่องเที่ยว</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Places Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">สถานที่ท่องเที่ยวแนะนำ</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://shorturl.asia/Tnz7C" class="card-img-top" alt="วัดหลวงพ่อโสธร">
+                    <div class="card-body">
+                        <h5 class="card-title">วัดหลวงพ่อโสธร</h5>
+                        <p class="card-text">วัดศักดิ์สิทธิ์คู่บ้านคู่เมืองของฉะเชิงเทรา</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://shorturl.asia/peKwE" class="card-img-top" alt="เขื่อนทดน้ำบางปะกง">
+                    <div class="card-body">
+                        <h5 class="card-title">เขื่อนทดน้ำบางปะกง</h5>
+                        <p class="card-text">จุดชมวิวแม่น้ำบางปะกงที่สวยงาม</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://shorturl.asia/7Ar54" class="card-img-top" alt="สวนสมเด็จพระศรีนครินทร์">
+                    <div class="card-body">
+                        <h5 class="card-title">สวนสมเด็จพระศรีนครินทร์</h5>
+                        <p class="card-text">สวนสาธารณะที่ร่มรื่นและเหมาะแก่การพักผ่อน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://shorturl.asia/BWUQt" class="card-img-top" alt="วัดสมานรัตนาราม">
+                    <div class="card-body">
+                        <h5 class="card-title">วัดสมานรัตนาราม</h5>
+                        <p class="card-text">พระพิฆเนศปางนอนเสวยสุขที่ใหญ่ที่สุดในประเทศไทย</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 เว็บไซต์แนะนำสถานที่ท่องเที่ยว จังหวัดฉะเชิงเทรา</p>
+        <p>ติดต่อเรา: <a href="mailto:patsana29@gmail.com" class="text-white">patsana29@gmail.com</a></p>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">ติดต่อเรา</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">ชื่อ-นามสกุล:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">อีเมล:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">ข้อความ:</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
