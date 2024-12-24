@@ -1,1 +1,19 @@
 # hw2_bootstrap
+- git clone
+- git push
+- git add .
+- git commit -m "git commit -m "เพิ่มBoootstrap 5 และ Carsousel"
+- git commit -m "เพิ่มสถานที่ท่องเทีั่ยวใหม่8แห่ง"
+- git commit -m "เพิ่มสถานที่ท่องเทีั่ยวใหม่8แห่ง"
+- git commit -m "เพิ้มฟอร์มติดต่อlayoutด้วยbootstrap"
+- git push origin main
+- git status
+- git commit -m "เพิ่มฟอร์มติดต่อ bootstrap"
+- git commit -m "เพิ่ม Responsive Design รองรับหน้าจอทุกขนาด
+- git commit -m "ให้ข้อความเด่น" 
+- git commit -m "ข้อความชัดและเด่นขึ้น"
+- git commit -m "แก้ไขcss"
+- git commit -m "ตลาดบ้านใหม่"
+- git commit -m "เพื่มสถานที่ท่องเที่ยว"
+- git commit -m "ปุ่มค้นหาและแก้รูปภาพ"
+- git commit -m "แก้รูป"
