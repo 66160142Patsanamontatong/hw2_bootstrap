@@ -6,7 +6,27 @@
     <title>ติดต่อเรา</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -35,15 +55,15 @@
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">ชื่อ-นามสกุล:</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" placeholder="กรอกชื่อ-นามสกุลของคุณ" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">อีเมล:</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" placeholder="example@example.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">ข้อความ:</label>
-                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <textarea class="form-control" id="message" placeholder="พิมพ์ข้อความที่นี่" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">ส่งข้อความ</button>
                 </form>
@@ -58,8 +78,8 @@
                 <p><strong>เวลาทำการ:</strong> จันทร์ - ศุกร์ เวลา 8.00 น. - 17.00 น.</p>
                 <h4>ติดตามเรา</h4>
                 <div>
-                    <a href="#" class="btn btn-outline-primary me-2">Facebook</a>
-                    <a href="#" class="btn btn-outline-info">Twitter</a>
+                    <a href="#" class="btn btn-outline-primary me-2" aria-label="Facebook"><i class="bi bi-facebook"></i> Facebook</a>
+                    <a href="#" class="btn btn-outline-info" aria-label="Twitter"><i class="bi bi-twitter"></i> Twitter</a>
                 </div>
             </div>
         </div>
@@ -70,5 +90,8 @@
         <p>&copy; 2024 เว็บไซต์แนะนำสถานที่ท่องเที่ยว จังหวัดฉะเชิงเทรา</p>
         <p>ติดต่อเรา: <a href="mailto:patsana29@gmail.com" class="text-white">patsana29@gmail.com</a></p>
     </footer>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
